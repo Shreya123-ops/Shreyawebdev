@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ECEFF4; 
+}
+
+#landing {
+  background-color: #476383; 
+  color: #fff;
+}
+
+h1, h2 {
+  color: #333333; 
+}
+
+p.lead {
+  font-size: 1.25rem;
+}
+
+.btn-dark {
+  background-color: #333333; 
+  color: #fff;
+  border: none;
+}
+
+.card {
+  border: 1px solid #333333; 
+}
+
+.card-title {
+  color: #333333; 
+}
+
+#faq {
+  background-color: #F4F7FA; 
+}
+
+.accordion-button {
+  background-color: #476383; 
+  color: #333333; 
+
+.accordion-button.collapsed {
+  background-color: #F4F7FA; 
+}
+
+.btn-outline-dark {
+  border-color: #D88A73; 
+  color: #D88A73; 
+}
+
+.btn-outline-dark:hover {
+  background-color: #D88A73; 
+  color: white;
+}
+
+form .btn-dark {
+  background-color: #333333; 
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #D88A73; 
+}
+
+.quiz-section {
+  text-align: center;
+  margin: 50px 20px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.disorders {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.disorder-card {
+  margin: 0 15px;
+  text-align: center;
+}
+
+.disorder-card img {
+  width: 150px;
+  height: 150px;
+  background-color: #eee;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.quiz-form {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.options label {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 16px;
+}
+
+.submit-btn {
+  display: block;
+  margin: 30px auto;
+  padding: 10px 20px;
+  background-color: #5B9BD5; 
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+}

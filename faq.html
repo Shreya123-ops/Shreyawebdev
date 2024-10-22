@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ | NourishMind</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  
+  <div id="navbar"></div>
+
+  
+  <section id="faq" class="p-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+      <div class="accordion" id="faqAccordion">
+       
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+              What is mental health?
+            </button>
+          </h2>
+          <div id="faq1" class="accordion-collapse collapse">
+            <div class="accordion-body">Mental health includes emotional, psychological, and social well-being. It affects how we think, feel, and act.</div>
+          </div>
+        </div>
+       
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+              How can I improve my mental health?
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse">
+            <div class="accordion-body">Improving mental health can involve practicing mindfulness, regular physical activity, seeking therapy, and engaging in self-care.</div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+              What are the signs of mental health problems?
+            </button>
+          </h2>
+          <div id="faq3" class="accordion-collapse collapse">
+            <div class="accordion-body">Signs can include feeling sad or down, confused thinking, excessive fears or worries, and extreme mood changes.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

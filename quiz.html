@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NourishMind - Eating Disorder Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Include Navbar -->
+    <div id="navbar"></div>
+
+    <main>
+        <section class="quiz-section">
+            <h1>Do you have any concerns about your mental health?</h1>
+
+            <form class="quiz-form">
+                <!-- Question 1 -->
+                <div class="question">
+                    <p>Question 1: Do you often feel anxious or worried without a clear reason?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q1" value="agree"> Agree</label>
+                        <label><input type="radio" name="q1" value="neutral"> Neutral</label>
+                        <label><input type="radio" name="q1" value="disagree"> Disagree</label>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="question">
+                    <p>Question 2: Do you experience mood swings or sudden changes in emotions?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q2" value="agree"> Agree</label>
+                        <label><input type="radio" name="q2" value="neutral"> Neutral</label>
+                        <label><input type="radio" name="q2" value="disagree"> Disagree</label>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question">
+                    <p>Question 3: Do you struggle with maintaining a healthy relationship with food or eating patterns?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q3" value="agree"> Agree</label>
+                        <label><input type="radio" name="q3" value="neutral"> Neutral</label>
+                        <label><input type="radio" name="q3" value="disagree"> Disagree</label>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="question">
+                    <p>Question 4: Have you felt overly stressed or overwhelmed by daily tasks or responsibilities?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q4" value="agree"> Agree</label>
+                        <label><input type="radio" name="q4" value="neutral"> Neutral</label>
+                        <label><input type="radio" name="q4" value="disagree"> Disagree</label>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="question">
+                    <p>Question 5: Do you find it hard to sleep or often wake up feeling tired?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q5" value="agree"> Agree</label>
+                        <label><input type="radio" name="q5" value="neutral"> Neutral</label>
+                        <label><input type="radio" name="q5" value="disagree"> Disagree</label>
+                    </div>
+                </div>
+            </form>
+
+            <button class="submit-btn">Submit</button>
+        </section>
+    </main>
+
+    <!-- Include Navbar Script -->
+    <script>
+        fetch('navbar.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+          });
+    </script>
+</body>
+</html>
